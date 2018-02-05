@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>studentsApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+	  <servlet>
+	    <servlet-name>firstServlet</servlet-name>
+	    <servlet-class>com.jspiders.studentsapp.servlets.MyFirstServlet</servlet-class>
+	  </servlet>
+	  
+	  <servlet-mapping>
+	    <servlet-name>firstServlet</servlet-name>
+	    <url-pattern>/currentTime</url-pattern>
+	    <url-pattern>/cT</url-pattern>
+	    <url-pattern>/cTime</url-pattern>
+	  </servlet-mapping>
+  
+  
+	  <servlet>
+	    <servlet-name>myServlet</servlet-name>
+	    <servlet-class>com.jspiders.studentsapp.servlets.StudentSearchServlet</servlet-class>
+	  </servlet>
+	  
+	  <servlet-mapping>
+	    <servlet-name>myServlet</servlet-name>
+	    <url-pattern>/studentSearch</url-pattern>
+	  </servlet-mapping>
+  
+  
+	  <servlet>
+	    <servlet-name>allStudentsView</servlet-name>
+	    <servlet-class>com.jspiders.studentsapp.servlets.AllStudentsViewServlet</servlet-class>
+	  </servlet>
+	  
+	  <servlet-mapping>
+	    <servlet-name>allStudentsView</servlet-name>
+	    <url-pattern>/allStudentsView</url-pattern>
+	  </servlet-mapping>
+	  
+	  
+	   <servlet>
+	    <servlet-name>allStudentsViews</servlet-name>
+	    <servlet-class>com.jspiders.studentsapp.servlet.pratices.AllStudentsViewServlet</servlet-class>
+	  </servlet>
+	  
+	  <servlet-mapping>
+	    <servlet-name>allStudentsViews</servlet-name>
+	    <url-pattern>/allStudentsViews</url-pattern>
+	  </servlet-mapping>
+	  
+	  
+	  <servlet>
+	    <servlet-name>createProfile</servlet-name>
+	    <servlet-class>com.jspiders.studentsapp.servlets.CreateProfileServlet</servlet-class>
+	  </servlet>
+	  
+	  <servlet-mapping>
+	    <servlet-name>createProfile</servlet-name>
+	    <url-pattern>/createProfile</url-pattern>
+	  </servlet-mapping>
+  
+  
+</web-app>
